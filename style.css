@@ -11,4 +11,91 @@
 
 body{
     font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.description h1,.description p, .ratings p{
+    color: var(--veryDarkMagenta);
+}
+
+.container{
+    display: flex;
+    width:1400px;
+}
+
+.description{
+    width:33%;
+}
+
+.ratings{
+    width:66%;
+}
+
+.rating-box{
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width:400px;
+    height:40px;
+    background-color: var(--lightGrayishMagenta);
+    margin:10px;
+    border-radius: 10px;
+    padding-left:20px;
+}
+
+.stars img{
+    margin:2px;
+}
+
+.rating-box p{
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.reviews{
+    position: relative;
+    margin-left:auto;
+}
+
+.report-guru{
+    position: relative;
+    margin-left:auto;
+    top:5px;
+}
+
+.best-tech{
+    position: relative;
+    margin-left:auto;
+    top:10px;
+}
+
+
+/*.parent .section:nth-child(2) { margin-right: 20px ; }
+.parent .section:nth-child(3) { margin-right: 40px ; }
+OR pwede pud 
+.parent .section:last-child { margin-right: 40px ; }
+
+instead sa 
+
+.parent .section:nth-child(3) { margin-right: 40px ; }*/
+
+.testimonial-box{
+    width: 350px;
+    height: 250px;
+    padding:20px;
+    background-color: var(--veryDarkMagenta);
+    margin-right:20px;
+    border-radius: 10px;
+}
+
+.verified-buyer{
+    color: var(--softPink);
+}
+
+.testimonial-box  p:not(.verified-buyer){
+    color: var(--white);
 }
