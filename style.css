@@ -1,15 +1,16 @@
+
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-*{
-    font-family:"League Spartan",sans-serif;
-    --veryDarkMagenta:hsl(300, 43%, 22%);
-    --softPink:hsl(333, 80%, 67%);
-    --darkGrayishMagenta:hsl(303, 10%, 53%);
-    --lightGrayishMagenta:hsl(300, 24%, 96%);
-    --white:hsl(0, 0%, 100%);
+:root {
+    --dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
 }
 
-body{
+body {
+    font-family: "League Spartan", sans-serif;
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -18,84 +19,87 @@ body{
     justify-content: center;
 }
 
-.description h1,.description p, .ratings p{
-    color: var(--veryDarkMagenta);
+.description h1,
+.description p,
+.ratings p {
+    color: var(--dark-magenta);
 }
 
-.container{
+.container {
     display: flex;
-    width:1400px;
+    width: 1200px;
+    justify-content: space-between;
 }
 
-.description{
-    width:33%;
-}
-
-.ratings{
-    width:66%;
-}
-
-.rating-box{
-    display:flex;
-    flex-wrap: nowrap;
+.rating-box {
+    display: flex;
     align-items: center;
-    width:400px;
-    height:40px;
-    background-color: var(--lightGrayishMagenta);
-    margin:10px;
+    width: 400px;
+    height: 40px;
+    background-color: var(--light-grayish-magenta);
+    margin: 10px;
     border-radius: 10px;
-    padding-left:20px;
+    padding-left: 20px;
 }
 
-.stars img{
-    margin:2px;
+.description, .ratings {
+    flex: 1;
 }
 
-.rating-box p{
+.stars img {
+    margin: 2px;
+}
+
+.rating-box p {
     font-weight: 700;
     margin-left: 30px;
 }
 
-.reviews{
-    position: relative;
-    margin-left:auto;
-}
-
-.report-guru{
-    position: relative;
-    margin-left:auto;
-    top:5px;
-}
-
-.best-tech{
-    position: relative;
-    margin-left:auto;
-    top:10px;
-}
-
-
-/*.parent .section:nth-child(2) { margin-right: 20px ; }
-.parent .section:nth-child(3) { margin-right: 40px ; }
-OR pwede pud 
-.parent .section:last-child { margin-right: 40px ; }
-
-instead sa 
-
-.parent .section:nth-child(3) { margin-right: 40px ; }*/
-
-.testimonial-box{
-    width: 350px;
-    height: 250px;
-    padding:20px;
-    background-color: var(--veryDarkMagenta);
-    margin-right:20px;
+.testimonial-box {
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+    background-color: var(--dark-magenta);
     border-radius: 10px;
 }
 
-.verified-buyer{
-    color: var(--softPink);
+.verified-buyer {
+    color: var(--soft-pink);
 }
 
-.testimonial-box  p:not(.verified-buyer){
+.testimonial-box p:not(.verified-buyer) {
     color: var(--white);
+}
+
+.testimonial-box img {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+}
+
+.rating-box {
+    flex: 1 0 300px;
+}
+
+.rating-box:nth-child(1) {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.rating-box:nth-child(2) {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.rating-box:nth-child(3) {
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.buyer {
+    display: flex;
 }
