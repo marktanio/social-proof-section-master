@@ -12,19 +12,29 @@
 .image-container {
     content: ""; /* Empty content for the pseudo-element */
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 114px;
+    left: 50px;
     width: 100%;
     height: 100vh; /* Adjust height as needed */
     background-image: url("design/desktop-design.jpg");
     background-size:auto;
     z-index: -1; /* Ensure image goes behind page content */
     background-repeat: no-repeat;
-    opacity:50%;
+    opacity:60%;
   }
 
   .large-text {
     font-size: 55px;
+    line-height: 0.9;
+    letter-spacing: -1.3px;
+    margin-top: 50px;
+  }
+
+  .desc-text {
+    font-size: 20px;
+    margin-top: -11px;
+    line-height: 1.3;
+    letter-spacing: -0.7px;
   }
 
 body {
@@ -45,24 +55,33 @@ body {
 
 .container {
     display: flex;
-    width: 1200px;
+    width: 1100px;
     justify-content: space-between;
 }
 
 .rating-box {
     display: flex;
     align-items: center;
-    width: 400px;
-    height: 40px;
+    width: 414px;
+    height: 54px;
     background-color: var(--light-grayish-magenta);
     margin: 10px;
     border-radius: 10px;
-    padding-left: 20px;
+    padding-left: 30px;
+    font-size: 17px;
 }
 
 .description, .ratings {
-    flex: 1;
     width: 480px;
+}
+
+.description {
+    flex-basis: 42%;
+}
+
+.ratings {
+    flex-basis: 56%;
+    padding-top: 84px;
 }
 
 .stars img {
@@ -101,18 +120,18 @@ body {
 }
 
 .rating-box:nth-child(1) {
-    margin-left: 0;
+    margin-left: 90px;
     margin-top: 0;
 }
 
 .rating-box:nth-child(2) {
-    margin-left: 50px;
-    margin-top: 20px;
+    margin-left: 135px;
+    margin-top: 18px;
 }
 
 .rating-box:nth-child(3) {
-    margin-left: 100px;
-    margin-top: 20px;
+    margin-left: 185px;
+    margin-top: 18px;
 }
 
 p {
