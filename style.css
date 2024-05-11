@@ -9,6 +9,24 @@
     --white: hsl(0, 0%, 100%);
 }
 
+.image-container {
+    content: ""; /* Empty content for the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    background-image: url("design/desktop-design.jpg");
+    background-size:auto;
+    z-index: -1; /* Ensure image goes behind page content */
+    background-repeat: no-repeat;
+    opacity:50%;
+  }
+
+  .large-text {
+    font-size: 55px;
+  }
+
 body {
     font-family: "League Spartan", sans-serif;
     font-size: 15px;
@@ -44,6 +62,7 @@ body {
 
 .description, .ratings {
     flex: 1;
+    width: 480px;
 }
 
 .stars img {
