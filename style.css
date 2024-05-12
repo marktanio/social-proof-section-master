@@ -8,21 +8,6 @@
     --light-grayish-magenta: hsl(300, 24%, 96%);
     --white: hsl(0, 0%, 100%);
 }
-
-.image-container {
-    content: ""; /* Empty content for the pseudo-element */
-    position: absolute;
-    top: 114px;
-    left: 50px;
-    width: 100%;
-    height: 100vh; /* Adjust height as needed */
-    background-image: url("design/desktop-design.jpg");
-    background-size:auto;
-    z-index: -1; /* Ensure image goes behind page content */
-    background-repeat: no-repeat;
-    opacity:60%;
-  }
-
   .large-text {
     font-size: 55px;
     line-height: 0.9;
@@ -55,8 +40,9 @@ body {
 
 .container {
     display: flex;
-    width: 1100px;
+    width: 1120px;
     justify-content: space-between;
+    height: 292px;
 }
 
 .rating-box {
@@ -76,7 +62,7 @@ body {
 }
 
 .description {
-    flex-basis: 42%;
+    flex-basis: 41%;
 }
 
 .ratings {
@@ -94,8 +80,8 @@ body {
 }
 
 .testimonial-box {
-    width: 300px;
-    height: 200px;
+    width: 301px;
+    height: 166px;
     padding: 30px;
     background-color: var(--dark-magenta);
     border-radius: 10px;
@@ -109,10 +95,12 @@ body {
     color: var(--white);
 }
 
-.testimonial-box img {
-    border-radius: 50%;
-    width: 50px;
-    height: auto;
+.testimonial-box {
+    width: 301px;
+    height: 200px;
+    padding: 30px;
+    background-color: var(--dark-magenta);
+    border-radius: 10px;
 }
 
 .rating-box {
@@ -141,3 +129,35 @@ p {
 .buyer {
     display: flex;
 }
+
+.testimonial-box:nth-child(1) {
+    margin-top: 50px;
+}
+
+.testimonial-box:nth-child(2) {
+    margin-left: 0;
+    margin-top: 77px;
+}
+
+.testimonial-box:nth-child(3) {
+    margin-left: 0;
+    margin-top: 105px;
+}
+
+.buyer img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .buyer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .buyer-info p {
+    line-height: 1px;
+    margin: 8px;
+  }
